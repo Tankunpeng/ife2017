@@ -1,0 +1,12 @@
+output:before{
+	content:"->";
+	color:#aaa;
+}
+
+output.false{
+	color: #a00;
+}
+
+output.true{
+	color: #0a0;
+}
