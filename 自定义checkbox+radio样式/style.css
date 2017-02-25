@@ -1,0 +1,62 @@
+input[type=radio],input[type=checkbox]{
+			display: none;
+}
+
+.pseudo label.radio input+i,.pseudo label.checkbox input+i{
+    border: 0.1em solid #d9d9d9;
+    height: 0.8em;
+    width: 0.8em;
+    display: inline-block;
+    position: relative;
+}
+.pseudo label.radio input:checked+i,.pseudo label.checkbox input:checked+i{
+    border: 0.1em solid #d73e33;
+}
+
+.pseudo label.radio input+i{
+    border-radius: 0.8em;
+}
+.pseudo label.radio input:checked+i:after{
+	content: "";
+	border:0.2em solid #d73e33;
+	left: 50%;
+	top: 50%;
+	margin-left: -0.2em;
+	margin-top: -0.2em;
+	border-radius: 0.2em;
+	position: absolute;
+}
+
+.pseudo label.checkbox input:checked+i:after{
+	content: "";
+	border-left: 0.15em solid #d73e33;
+	border-bottom: 0.15em solid #d73e33;
+	height: 0.2em;
+	width: 0.4em;
+	left: 50%;
+	top: 50%;
+	margin-left: -0.25em;
+	margin-top: -0.25em;
+	transform: rotate(-45deg);
+	position: absolute;
+}
+
+.bg label input+i:after{
+	content: "";
+	padding-left: 18px;
+	
+
+}
+
+.bg label input[type=radio]+i:after{
+	background:transparent url(select.png) no-repeat -24px -6px;
+}
+.bg label input[type=checkbox]+i:after{
+	background:transparent url(select.png) no-repeat -24px -29px;
+}
+.bg label input[type=radio]:checked+i:after{
+	background:transparent url(select.png) no-repeat -58px -6px;
+}
+.bg label input[type=checkbox]:checked+i:after{
+	background:transparent url(select.png) no-repeat -58px -28px;
+}
